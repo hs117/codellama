@@ -17,7 +17,7 @@ fi
 echo "Downloading LICENSE and Acceptable Usage Policy"
 wget ${PRESIGNED_URL/'*'/"LICENSE"} -O ${TARGET_FOLDER}"/LICENSE"
 wget ${PRESIGNED_URL/'*'/"USE_POLICY.md"} -O ${TARGET_FOLDER}"/USE_POLICY.md"
-
+${MODEL_PATH}="https://download2.llamameta.net/*?Policy=eyJTdGF0ZW1lbnQiOlt7InVuaXF1ZV9oYXNoIjoicGcyeXV4a2ZkcWwzajE5cnFhMnAzanZkIiwiUmVzb3VyY2UiOiJodHRwczpcL1wvZG93bmxvYWQyLmxsYW1hbWV0YS5uZXRcLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2OTMzNzkxNjl9fX1dfQ__&Signature=Ny8QMz8ZYdSGexY4bUgd5NwaZXJmVUr066nZ%7EFKFS7CaW08Nr0CLj9LfCJvTvb3jVNs3nqivIsrnwOJ3%7Ewkfsfzryosw4v9nN78E%7EQApLz0kGw7JLKYtBWg1xXn0c09LYmA4VrLd9RXNc6YQ2RRRHH9ov0irFwYXrBNT44ha9HVgDwNEwbE0hfuwltL8CSbVqzPKKPgLmkV8mVQmmCvCaETzzm1SWxff2keyHrA8NrTPu1HdqH1%7E6jwgjdN8rb4es1SVsh745AbzRccafki00-Q2xgJN1GTCGCfGEAVYhKSlUqJeUl7RRJj4k-zgq9KbClUjPdRZ6teqAYLCgipgFA__&Key-Pair-Id=K15QRJLYKIFSLZ&Download-Request-ID=330010089591446"
 for m in ${MODEL_SIZE//,/ }
 do
     case $m in
